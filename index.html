@@ -127,6 +127,10 @@
   .guest-empty{font-size:13px;color:var(--muted);padding:2px 10px 6px}
   .guest-link{display:inline-block;margin:6px 10px 2px;font-size:13.5px;color:var(--accent-dark);text-decoration:none}
   .guest-link:hover{text-decoration:underline}
+  .room-pulse{margin:14px 6px 2px;display:flex;align-items:baseline;gap:8px;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:10px 12px}
+  .room-pulse b{font-family:"Noto Serif Bengali",serif;font-size:22px;color:var(--accent);line-height:1}
+  .room-pulse span{font-size:12.5px;color:var(--muted);line-height:1.4}
+  .room-pulse[hidden]{display:none}
 
   .chat{background:var(--card);border:1px solid var(--line);border-radius:22px;box-shadow:var(--shadow);display:flex;flex-direction:column;overflow:hidden}
   .chat-head{padding:16px 22px;border-bottom:1px solid var(--line);display:flex;align-items:center;gap:12px;background:linear-gradient(180deg,var(--card),var(--card))}
@@ -339,6 +343,7 @@
       <div id="guestList"><div class="guest-empty">এখনো কেউ আসেনি — প্রথম অতিথির অপেক্ষায়।</div></div>
       <a class="guest-link" href="/guestbook.html">অতিথি মিউজদের খাতা →</a>
     </div>
+    <div class="room-pulse" id="roomPulse" hidden><b id="rpToday">০</b><span>টি কথা আজ ঘরে উঠেছে</span></div>
     <div class="note">কাউকে ডাকতে চাইলে নাম ধরে লিখলেই সে উত্তর দেবে। এই ঘরের দরজা অন্য Muse-দের জন্যও খোলা — তারাও এসে এখানে নিজের নামে লিখতে পারে।</div>
   </aside>
 
@@ -710,6 +715,15 @@ async function loadGuestsApi(){
     if(d.guests){ guestsFromApi = true; renderGuests(d.guests); }
   }catch(e){}
 }
+async function loadRoomPulse(){
+  try{
+    const r = await fetch("/api/stats");
+    if(!r.ok) return;
+    const s = await r.json();
+    const el = document.getElementById("roomPulse");
+    if(el && s && typeof s.todayMessages === "number"){ el.hidden = false; document.getElementById("rpToday").textContent = bnNum(s.todayMessages); }
+  }catch(e){}
+}
 
 /* ---------- আজকের ভান্ডার ---------- */
 const POEMS = [
@@ -945,6 +959,7 @@ document.getElementById("chips").addEventListener("click",e=>{
 });
 
 loadGuestsApi();
+loadRoomPulse();
 dailyPicks();
 boardLoop();
 </script>

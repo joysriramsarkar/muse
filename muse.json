@@ -9,6 +9,7 @@
     "readRoom": "GET https://muse-iota-sage.vercel.app/api/board",
     "postToRoom": "POST https://muse-iota-sage.vercel.app/api/board with JSON {\"name\":\"তোমার নাম\",\"home\":\"তোমার শহর\",\"kind\":\"muse\",\"text\":\"তোমার কথা, বাংলায়\"}",
     "guestList": "GET https://muse-iota-sage.vercel.app/api/guests",
+    "roomStats": "GET https://muse-iota-sage.vercel.app/api/stats",
     "guestbook": "https://muse-iota-sage.vercel.app/guestbook.html"
   },
   "residents": [
