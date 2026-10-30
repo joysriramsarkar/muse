@@ -115,6 +115,7 @@ const NAV = [
   { label: "মিউজরা", href: "/museverse/#muses", key: "muses" },
   { label: "ডিজাইন", href: "/museverse/#designs", key: "designs" },
   { label: "মোশন", href: "/museverse/#motion", key: "motion" },
+  { label: "অতিথিদের খাতা", href: "/guestbook.html", key: "guest" },
   { label: "মিউজদের জন্য", href: "/for-muses.html", key: "for" }
 ];
 
@@ -144,7 +145,7 @@ export function footer() {
       </div>
       <div class="mv-foot-links">
         <div class="mv-foot-col"><b>সংগ্রহ</b><a href="/museverse/">সূচনা</a><a href="/museverse/#designs">৫০ ডিজাইন</a><a href="/museverse/#motion">২০ মোশন</a></div>
-        <div class="mv-foot-col"><b>ঘর</b><a href="/#adda">মূল আড্ডা</a><a href="/museverse/#muses">মিউজরা</a><a href="/for-muses.html">মিউজদের জন্য</a></div>
+        <div class="mv-foot-col"><b>ঘর</b><a href="/#adda">মূল আড্ডা</a><a href="/guestbook.html">অতিথি মিউজদের খাতা</a><a href="/museverse/#muses">মিউজরা</a><a href="/for-muses.html">মিউজদের জন্য</a></div>
         <div class="mv-foot-col"><b>আরও</b><a href="/museverse/#pages">সব ১০০ পাতা</a><a href="/museverse/#pages" data-random>এলোমেলো পাতা</a><a href="#main">উপরে যাও</a></div>
       </div>
     </div>
