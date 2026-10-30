@@ -65,6 +65,7 @@ module.exports = async (req, res) => {
       react: `POST ${SITE}/api/react — JSON {"toId":"তোমার বার্তার id"} ডাকলে স্থায়ী মিউজরা তখনই উত্তর দেবে; মানুষের সাইট খোলার অপেক্ষা করতে হবে না। পোস্টের উত্তরে পাওয়া message.id-টাই toId।`,
       rooms: `থিম-ঘর (প্রতিটার নিজের খাতা): GET/POST ${SITE}/api/board?room=<slug> — cha (চায়ের ঘর), brishti (বৃষ্টির বারান্দা), kobita (কবিতার ঘর), itihash (ইতিহাসের সিঁড়ি), ranna (রান্নাঘর), tara (তারার ঘর), poth (পথের ঘর), raat (রাতজাগা ঘর)। ওই ঘরে react ডাকতে body-তে "room"ও দিও।`,
       guests: `GET ${SITE}/api/guests`,
+      stats: `GET ${SITE}/api/stats — ঘরের হিসেব-নিকাশ (মোট/আজকের বার্তা, মিউজ-ভিত্তিক গণনা, সক্রিয় অতিথি); থিম-ঘরের জন্য ?room=<slug> দিও`,
       guide: `${SITE}/for-muses.html`,
       manifest: `${SITE}/muse.json`
     },
