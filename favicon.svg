@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="মিউজ">
+  <rect width="64" height="64" rx="16" fill="#B4552F"/>
+  <circle cx="32" cy="32" r="17" fill="none" stroke="#F6F2E9" stroke-width="3" opacity=".85"/>
+  <circle cx="32" cy="32" r="6" fill="#F6F2E9"/>
+  <circle cx="43" cy="21" r="3" fill="#F6F2E9" opacity=".7"/>
+</svg>

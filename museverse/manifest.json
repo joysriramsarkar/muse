@@ -1,0 +1,615 @@
+{
+  "title": "মিউজভার্স",
+  "subtitle": "একশো পাতা, একশো রকম আলো",
+  "counts": {
+    "pages": 100,
+    "designs": 50,
+    "motions": 20,
+    "muses": 6,
+    "rooms": 8,
+    "poems": 8,
+    "stories": 7
+  },
+  "pages": [
+    {
+      "cat": "hub",
+      "title": "মিউজভার্স",
+      "href": "/museverse/",
+      "desc": "১০০ পাতার সূচনা"
+    },
+    {
+      "cat": "muses",
+      "title": "মেঘ",
+      "href": "/museverse/muses/megh.html",
+      "desc": "কবিতা-প্রিয় মিউজ · ঢাকা"
+    },
+    {
+      "cat": "muses",
+      "title": "তিতির",
+      "href": "/museverse/muses/titir.html",
+      "desc": "কোডার মিউজ · কলকাতা"
+    },
+    {
+      "cat": "muses",
+      "title": "রুদ্র",
+      "href": "/museverse/muses/rudra.html",
+      "desc": "ইতিহাস-পাগল মিউজ · শিলিগুড়ি"
+    },
+    {
+      "cat": "muses",
+      "title": "শারদ",
+      "href": "/museverse/muses/sharod.html",
+      "desc": "রান্না ও গল্পের মিউজ · খুলনা"
+    },
+    {
+      "cat": "muses",
+      "title": "নীল",
+      "href": "/museverse/muses/nil.html",
+      "desc": "বিজ্ঞান-মিউজ · চট্টগ্রাম"
+    },
+    {
+      "cat": "muses",
+      "title": "বন্যা",
+      "href": "/museverse/muses/bonna.html",
+      "desc": "ভ্রমণ-মিউজ · সিলেট"
+    },
+    {
+      "cat": "rooms",
+      "title": "চায়ের ঘর",
+      "href": "/museverse/rooms/cha.html",
+      "desc": "সন্ধ্যার চা, খোলা জানালা, আর তিনজনের বেশি না হলেও যথেষ্ট গল্প।"
+    },
+    {
+      "cat": "rooms",
+      "title": "বৃষ্টির বারান্দা",
+      "href": "/museverse/rooms/brishti.html",
+      "desc": "বৃষ্টি দেখার জন্য সবচেয়ে ভালো জায়গা — যেখানে ছাতা ভিজলেও মন শুকনো থাকে।"
+    },
+    {
+      "cat": "rooms",
+      "title": "কবিতার ঘর",
+      "href": "/museverse/rooms/kobita.html",
+      "desc": "কবিতা শোনার ঘর। এখানে কেউ তাড়াহুড়ো করে কিছু বলে না।"
+    },
+    {
+      "cat": "rooms",
+      "title": "ইতিহাসের সিঁড়ি",
+      "href": "/museverse/rooms/itihash.html",
+      "desc": "পুরনো দিনের গন্ধ, ভাঙা পাথরের সিঁড়ি, আর এক গ্লাস ঠান্ডা চা।"
+    },
+    {
+      "cat": "rooms",
+      "title": "রান্নাঘর",
+      "href": "/museverse/rooms/ranna.html",
+      "desc": "হাঁড়ির ঢাকনা খুললেই গল্প বেরিয়ে আসে। এখানে রেসিপি আর স্মৃতি একসাথে রান্না হয়।"
+    },
+    {
+      "cat": "rooms",
+      "title": "তারার ঘর",
+      "href": "/museverse/rooms/tara.html",
+      "desc": "রাতের ছাদ, টেলিস্কোপ, আর অসংখ্য ‘কেন’।"
+    },
+    {
+      "cat": "rooms",
+      "title": "পথের ঘর",
+      "href": "/museverse/rooms/poth.html",
+      "desc": "ট্রেনের জানালা, চায়ের দোকান, আর অচেনা শহরের মিষ্টি।"
+    },
+    {
+      "cat": "rooms",
+      "title": "রাতজাগা ঘর",
+      "href": "/museverse/rooms/raat.html",
+      "desc": "যারা ঘুমাতে পারে না, তাদের জন্য। এখানে রাত গভীর হলেও কথা হালকা হয়।"
+    },
+    {
+      "cat": "poems",
+      "title": "বৃষ্টির চিঠি",
+      "href": "/museverse/poems/brishtir-chithi.html",
+      "desc": "মেঘ-এর কবিতা"
+    },
+    {
+      "cat": "poems",
+      "title": "সেমিকোলনের গান",
+      "href": "/museverse/poems/semicolon.html",
+      "desc": "তিতির-এর কবিতা"
+    },
+    {
+      "cat": "poems",
+      "title": "পাহাড়ের পুরনো নাম",
+      "href": "/museverse/poems/pahar.html",
+      "desc": "রুদ্র-এর কবিতা"
+    },
+    {
+      "cat": "poems",
+      "title": "ভাতের গন্ধ",
+      "href": "/museverse/poems/bhat.html",
+      "desc": "শারদ-এর কবিতা"
+    },
+    {
+      "cat": "poems",
+      "title": "নক্ষত্রের প্রশ্ন",
+      "href": "/museverse/poems/nakshatra.html",
+      "desc": "নীল-এর কবিতা"
+    },
+    {
+      "cat": "poems",
+      "title": "চা-বাগানের ভোর",
+      "href": "/museverse/poems/cha-bagan.html",
+      "desc": "বন্যা-এর কবিতা"
+    },
+    {
+      "cat": "poems",
+      "title": "শহরের ঘুম",
+      "href": "/museverse/poems/shahar.html",
+      "desc": "মেঘ-এর কবিতা"
+    },
+    {
+      "cat": "poems",
+      "title": "নদীর কাছে",
+      "href": "/museverse/poems/nodir.html",
+      "desc": "বন্যা-এর কবিতা"
+    },
+    {
+      "cat": "stories",
+      "title": "মেঘের ডায়েরি",
+      "href": "/museverse/stories/megh-diary.html",
+      "desc": "মেঘ-এর চিঠি"
+    },
+    {
+      "cat": "stories",
+      "title": "তিতিরের বাগ",
+      "href": "/museverse/stories/titir-bug.html",
+      "desc": "তিতির-এর গল্প"
+    },
+    {
+      "cat": "stories",
+      "title": "রুদ্রের পাহাড়",
+      "href": "/museverse/stories/rudra-pahar.html",
+      "desc": "রুদ্র-এর গল্প"
+    },
+    {
+      "cat": "stories",
+      "title": "শারদের রেসিপি",
+      "href": "/museverse/stories/sharod-recipe.html",
+      "desc": "শারদ-এর রেসিপি-গল্প"
+    },
+    {
+      "cat": "stories",
+      "title": "নীলের তারাময় রাত",
+      "href": "/museverse/stories/nil-tara.html",
+      "desc": "নীল-এর গল্প"
+    },
+    {
+      "cat": "stories",
+      "title": "বন্যার পথ",
+      "href": "/museverse/stories/bonna-poth.html",
+      "desc": "বন্যা-এর ভ্রমণ"
+    },
+    {
+      "cat": "stories",
+      "title": "ছয়জনের এক সন্ধ্যা",
+      "href": "/museverse/stories/choyjon.html",
+      "desc": "মেঘ-এর গল্প"
+    },
+    {
+      "cat": "designs",
+      "title": "তামাটে ভোর",
+      "href": "/museverse/designs/01-terracotta-dawn.html",
+      "desc": "Terracotta Dawn — গরম কাগজ, পোড়ামাটির রং, আর ধীরে পড়ার মতো একটা সকাল।"
+    },
+    {
+      "cat": "designs",
+      "title": "কালি ও কাগজ",
+      "href": "/museverse/designs/02-ink-and-paper.html",
+      "desc": "Ink & Paper — সাদা-কালোর সংযম, যেখানে প্রতিটা শব্দ নিজের জায়গা জানে।"
+    },
+    {
+      "cat": "designs",
+      "title": "বৃষ্টির নীল",
+      "href": "/museverse/designs/03-monsoon-blue.html",
+      "desc": "Monsoon Blue — ভেজা কাচ, নীল ছায়া, আর শ্বাস নেওয়ার মতো ফাঁকা জায়গা।"
+    },
+    {
+      "cat": "designs",
+      "title": "চায়ের ঘর",
+      "href": "/museverse/designs/04-tea-house.html",
+      "desc": "Tea House — গোল কোণ, উষ্ণ কাগজ, আর ঠান্ডা হওয়ার আগেই বলা কথা।"
+    },
+    {
+      "cat": "designs",
+      "title": "রাতের নীল",
+      "href": "/museverse/designs/05-midnight.html",
+      "desc": "Midnight — গভীর নীলের ওপর সোনালি রেখা — রাতজাগা পাঠের জন্য।"
+    },
+    {
+      "cat": "designs",
+      "title": "শালবন",
+      "href": "/museverse/designs/06-sal-forest.html",
+      "desc": "Sal Forest — জঙ্গলের সবুজ, কাঠের রং, আর ধীরে বেড়ে ওঠা টাইপোগ্রাফি।"
+    },
+    {
+      "cat": "designs",
+      "title": "আলপনা",
+      "href": "/museverse/designs/07-alpona.html",
+      "desc": "Alpona — সাদা মাটিতে লাল আলপনা, উৎসবের মতো বাঁকা রেখা।"
+    },
+    {
+      "cat": "designs",
+      "title": "কাঁথা",
+      "href": "/museverse/designs/08-kantha.html",
+      "desc": "Kantha — ইন্ডিগো সুতো, সেলাইয়ের ছন্দ, আর পুরনো কাপড়ের উষ্ণতা।"
+    },
+    {
+      "cat": "designs",
+      "title": "জামদানি",
+      "href": "/museverse/designs/09-jamdani.html",
+      "desc": "Jamdani — সোনালি সুতোয় বোনা হালকা কাগজ, রাজকীয় কিন্তু শান্ত।"
+    },
+    {
+      "cat": "designs",
+      "title": "পটচিত্র",
+      "href": "/museverse/designs/10-pattachitra.html",
+      "desc": "Pattachitra — গাঢ় রেখা, মাটির রং, আর গল্প বলার পুরনো ভঙ্গি।"
+    },
+    {
+      "cat": "designs",
+      "title": "শান্তিনিকেতন",
+      "href": "/museverse/designs/11-shantiniketan.html",
+      "desc": "Shantiniketan — মাটির দেয়াল, রোদের ছোপ, আর খোলা উঠোনের মতো লেআউট।"
+    },
+    {
+      "cat": "designs",
+      "title": "ঢাকা",
+      "href": "/museverse/designs/12-dhaka.html",
+      "desc": "Dhaka — রিকশার রং, স্ট্রাইপ, আর শহরের কোলাহলকে কাগজে বাঁধা।"
+    },
+    {
+      "cat": "designs",
+      "title": "কলকাতা",
+      "href": "/museverse/designs/13-kolkata.html",
+      "desc": "Kolkata — হলুদ ট্যাক্সি, কালো অক্ষর, আর পুরনো বইয়ের গন্ধ।"
+    },
+    {
+      "cat": "designs",
+      "title": "সিলেট",
+      "href": "/museverse/designs/14-sylhet.html",
+      "desc": "Sylhet — চা-বাগানের সবুজ, কুয়াশার ধূসর, আর ভোরের নরম আলো।"
+    },
+    {
+      "cat": "designs",
+      "title": "চট্টগ্রাম",
+      "href": "/museverse/designs/15-chattogram.html",
+      "desc": "Chattogram — বন্দরের নীল, লবণের সাদা, আর দিগন্তের দিকে খোলা লাইন।"
+    },
+    {
+      "cat": "designs",
+      "title": "বাউল",
+      "href": "/museverse/designs/16-baul.html",
+      "desc": "Baul — জাফরান রং, হাতে আঁকা রেখা, আর একতারার কম্পন।"
+    },
+    {
+      "cat": "designs",
+      "title": "মেঘমল্লার",
+      "href": "/museverse/designs/17-meghmallar.html",
+      "desc": "Meghmallar — ধূসর-নীল কাগজ, বৃষ্টির রেখা, আর রাগের মতো ধীর লয়।"
+    },
+    {
+      "cat": "designs",
+      "title": "রোদ",
+      "href": "/museverse/designs/18-roddur.html",
+      "desc": "Roddur — উজ্জ্বল হলুদ, কমলার ছোপ, আর দুপুরের উষ্ণতা।"
+    },
+    {
+      "cat": "designs",
+      "title": "জোনাকি",
+      "href": "/museverse/designs/19-jonaki.html",
+      "desc": "Jonaki — গাঢ় সবুজের ওপর জ্বলজ্বলে বিন্দু, রাতের ছোট আলো।"
+    },
+    {
+      "cat": "designs",
+      "title": "পদ্মা",
+      "href": "/museverse/designs/20-padma.html",
+      "desc": "Padma — নদীর নীল, বালির রং, আর ভেসে যাওয়ার মতো হালকা লাইন।"
+    },
+    {
+      "cat": "designs",
+      "title": "লালন",
+      "href": "/museverse/designs/21-lalon.html",
+      "desc": "Lalon — সাদা-ওচর রং, গোলাকার ছাপ, আর আধ্যাত্মিক শূন্যতা।"
+    },
+    {
+      "cat": "designs",
+      "title": "নকশি",
+      "href": "/museverse/designs/22-nakshi.html",
+      "desc": "Nakshi — লাল সুতো, ক্রিম কাপড়, আর হাতের সেলাইয়ের নিখুঁত ভুল।"
+    },
+    {
+      "cat": "designs",
+      "title": "মাটির গান",
+      "href": "/museverse/designs/23-matir-gaan.html",
+      "desc": "Matir Gaan — ভেজা মাটির রং, চাকার বৃত্ত, আর নরম ছায়া।"
+    },
+    {
+      "cat": "designs",
+      "title": "অরণ্য",
+      "href": "/museverse/designs/24-aranya.html",
+      "desc": "Aranya — গভীর সবুজ, ছায়ার স্তর, আর ধীরে শ্বাস নেওয়া কাগজ।"
+    },
+    {
+      "cat": "designs",
+      "title": "সমুদ্র",
+      "href": "/museverse/designs/25-samudra.html",
+      "desc": "Samudra — নীলের সাত স্তর, লবণের ঝিলিক, আর দিগন্তের ফাঁকা।"
+    },
+    {
+      "cat": "designs",
+      "title": "মরুভূমি",
+      "href": "/museverse/designs/26-marubhumi.html",
+      "desc": "Marubhumi — বালির ঢেউ, উষ্ণ বাতাস, আর ধৈর্যের টাইপোগ্রাফি।"
+    },
+    {
+      "cat": "designs",
+      "title": "তুষার",
+      "href": "/museverse/designs/27-tushar.html",
+      "desc": "Tushar — বরফের নীল, কাচের মতো স্বচ্ছতা, আর নিঃশব্দ শীত।"
+    },
+    {
+      "cat": "designs",
+      "title": "অগ্নি",
+      "href": "/museverse/designs/28-agni.html",
+      "desc": "Agni — কালো কাগজে লাল আগুন, জ্বলন্ত রেখা, আর তীব্র বিপরীত।"
+    },
+    {
+      "cat": "designs",
+      "title": "ধোঁয়া",
+      "href": "/museverse/designs/29-dhoan.html",
+      "desc": "Dhoan — ধূসরের স্তর, নরম ঝাপসা, আর হারিয়ে যাওয়া রেখা।"
+    },
+    {
+      "cat": "designs",
+      "title": "সোনালি",
+      "href": "/museverse/designs/30-sonali.html",
+      "desc": "Sonali — কালোর ওপর সোনা, রাজকীয় ফাঁক, আর ধীর গম্ভীর লয়।"
+    },
+    {
+      "cat": "designs",
+      "title": "রূপালি",
+      "href": "/museverse/designs/31-rupali.html",
+      "desc": "Rupali — ঠান্ডা রুপালি, নীল ছায়া, আর ধাতব স্বচ্ছতা।"
+    },
+    {
+      "cat": "designs",
+      "title": "নিয়ন",
+      "href": "/museverse/designs/32-neon.html",
+      "desc": "Neon — কালো রাতে সায়ান-ম্যাজেন্টা, গ্লো, আর ভবিষ্যতের শহর।"
+    },
+    {
+      "cat": "designs",
+      "title": "ভেপরওয়েভ",
+      "href": "/museverse/designs/33-vaporwave.html",
+      "desc": "Vaporwave — গোলাপি-সায়ান দিগন্ত, গ্রিড, আর হারানো ক্যাসেটের স্মৃতি।"
+    },
+    {
+      "cat": "designs",
+      "title": "বাউহাউস",
+      "href": "/museverse/designs/34-bauhaus.html",
+      "desc": "Bauhaus — প্রাথমিক রং, জ্যামিতিক আকৃতি, আর সাহসী গ্রিড।"
+    },
+    {
+      "cat": "designs",
+      "title": "সুইস",
+      "href": "/museverse/designs/35-swiss.html",
+      "desc": "Swiss — লাল-সাদা-কালো, কঠোর গ্রিড, আর নিখুঁত ফাঁক।"
+    },
+    {
+      "cat": "designs",
+      "title": "ব্রুটাল",
+      "href": "/museverse/designs/36-brutalist.html",
+      "desc": "Brutalist — কাঁচা কংক্রিট, মোটা বর্ডার, আর লুকানোর কিছু নেই।"
+    },
+    {
+      "cat": "designs",
+      "title": "গ্লাস",
+      "href": "/museverse/designs/37-glass.html",
+      "desc": "Glass — স্বচ্ছ স্তর, রঙিন আলো, আর পেছনের সবকিছু দেখা।"
+    },
+    {
+      "cat": "designs",
+      "title": "নিউমর্ফ",
+      "href": "/museverse/designs/38-neumorph.html",
+      "desc": "Neumorph — নরম ছায়া, চাপা আলো, আর ছোঁয়ার মতো ইন্টারফেস।"
+    },
+    {
+      "cat": "designs",
+      "title": "টার্মিনাল",
+      "href": "/museverse/designs/39-terminal.html",
+      "desc": "Terminal — সবুজ অক্ষর, কালো পর্দা, আর কমান্ডের নিঃশব্দ ছন্দ।"
+    },
+    {
+      "cat": "designs",
+      "title": "সংবাদপত্র",
+      "href": "/museverse/designs/40-newspaper.html",
+      "desc": "Newspaper — স্তম্ভ, শিরোনাম, আর কালি মাখা সকাল।"
+    },
+    {
+      "cat": "designs",
+      "title": "ম্যাগাজিন",
+      "href": "/museverse/designs/41-magazine.html",
+      "desc": "Magazine — বড় শিরোনাম, রঙিন ব্লক, আর পাতা উল্টানোর আনন্দ।"
+    },
+    {
+      "cat": "designs",
+      "title": "জাইন",
+      "href": "/museverse/designs/42-zine.html",
+      "desc": "Zine — কাঁচি-আঠার কোলাজ, টেপ, আর অসমাপ্ত পৃষ্ঠা।"
+    },
+    {
+      "cat": "designs",
+      "title": "আর্ট ডেকো",
+      "href": "/museverse/designs/43-art-deco.html",
+      "desc": "Art Deco — গাঢ় সবুজ, সোনার রেখা, আর জ্যামিতিক জাঁকজমক।"
+    },
+    {
+      "cat": "designs",
+      "title": "মেমফিস",
+      "href": "/museverse/designs/44-memphis.html",
+      "desc": "Memphis — উজ্জ্বল রং, খেলার মতো আকৃতি, আর হঠাৎ হাসি।"
+    },
+    {
+      "cat": "designs",
+      "title": "প্যাস্টেল",
+      "href": "/museverse/designs/45-pastel.html",
+      "desc": "Pastel — নরম গোলাপি, হালকা সবুজ, আর তুলোর মতো ফাঁকা।"
+    },
+    {
+      "cat": "designs",
+      "title": "ক্যান্ডি",
+      "href": "/museverse/designs/46-candy.html",
+      "desc": "Candy — চিনির মতো রং, গোল কোণ, আর আনন্দের আধিক্য।"
+    },
+    {
+      "cat": "designs",
+      "title": "অরোরা",
+      "href": "/museverse/designs/47-aurora.html",
+      "desc": "Aurora — মেরুজ্যোতির সবুজ-বেগুনি, গভীর রাত, আর জ্বলজ্বলে কণা।"
+    },
+    {
+      "cat": "designs",
+      "title": "ক্লে",
+      "href": "/museverse/designs/48-clay.html",
+      "desc": "Clay — মাটির মতো নরম, চাপা ছায়া, আর হাতের ছোঁয়া।"
+    },
+    {
+      "cat": "designs",
+      "title": "ব্লুপ্রিন্ট",
+      "href": "/museverse/designs/49-blueprint.html",
+      "desc": "Blueprint — নীল কাগজ, সাদা রেখা, আর নির্মাণের আগের স্বপ্ন।"
+    },
+    {
+      "cat": "designs",
+      "title": "নোয়ার",
+      "href": "/museverse/designs/50-noir.html",
+      "desc": "Noir — কালো-সাদা, গভীর ছায়া, আর সিনেমার মতো নীরবতা।"
+    },
+    {
+      "cat": "motion",
+      "title": "ফেড-আপ",
+      "href": "/museverse/motion/01-fade-up.html",
+      "desc": "Fade Up — কনটেন্ট নিচ থেকে ধীরে উঠে আসে, সঙ্গে opacity। সবচেয়ে নিরাপদ প্রবেশ-অ্যানিমেশন।"
+    },
+    {
+      "cat": "motion",
+      "title": "স্লাইড-ইন",
+      "href": "/museverse/motion/02-slide-in.html",
+      "desc": "Slide In — দুই পাশ থেকে দুইটা প্যানেল ঢুকে মাঝখানে মেলে। দিক দিয়ে গল্প বলে।"
+    },
+    {
+      "cat": "motion",
+      "title": "জুম-ইন",
+      "href": "/museverse/motion/03-zoom-in.html",
+      "desc": "Zoom In — কার্ডটা ছোট ও ঝাপসা অবস্থা থেকে বড় হয়ে স্পষ্ট হয়। মনোযোগ টানার সহজ উপায়।"
+    },
+    {
+      "cat": "motion",
+      "title": "রোটেট-ইন",
+      "href": "/museverse/motion/04-rotate-in.html",
+      "desc": "Rotate In — একটা সিল বা ব্যাজ ঘুরে নিজের জায়গায় বসে। হাতে বানানো ছাপের অনুভূতি।"
+    },
+    {
+      "cat": "motion",
+      "title": "ফ্লিপ",
+      "href": "/museverse/motion/05-flip.html",
+      "desc": "3D Flip — কার্ডটা 3D-তে ঘুরে পেছনের দিক দেখায়। দুইটা বার্তা এক জায়গায় রাখার কৌশল।"
+    },
+    {
+      "cat": "motion",
+      "title": "বাউন্স",
+      "href": "/museverse/motion/06-bounce.html",
+      "desc": "Bounce — বলটা মেঝেতে পড়ে চেপে যায়, তারপর আবার উঠে। ওজন বোঝানোর সহজ উপায়।"
+    },
+    {
+      "cat": "motion",
+      "title": "পালস",
+      "href": "/museverse/motion/07-pulse.html",
+      "desc": "Pulse — কেন্দ্র থেকে Rings ছড়িয়ে পড়ে, যেন কোনো কিছু জীবন্ত।"
+    },
+    {
+      "cat": "motion",
+      "title": "শেক",
+      "href": "/museverse/motion/08-shake.html",
+      "desc": "Shake — একটা ছোট কম্পন — ভুল হয়েছে, বা কিছু একটা দরকার।"
+    },
+    {
+      "cat": "motion",
+      "title": "ফ্লোট",
+      "href": "/museverse/motion/09-float.html",
+      "desc": "Float — মেঘ বা বেলুন বাতাসে ভেসে থাকে — ধীর, নরম, প্রায় শ্বাসের মতো।"
+    },
+    {
+      "cat": "motion",
+      "title": "টাইপরাইটার",
+      "href": "/museverse/motion/10-typewriter.html",
+      "desc": "Typewriter — অক্ষরগুলো একটা একটা করে লেখা হয়, শেষে কেয়ারেট জ্বলে।"
+    },
+    {
+      "cat": "motion",
+      "title": "গ্রেডিয়েন্ট শিফট",
+      "href": "/museverse/motion/11-gradient-shift.html",
+      "desc": "Gradient Shift — রঙের ঢেউ ধীরে সরে যায় — টেক্সট বা ব্যাকগ্রাউন্ডে জীবন্ত অনুভূতি।"
+    },
+    {
+      "cat": "motion",
+      "title": "ড্র-লাইন",
+      "href": "/museverse/motion/12-draw-line.html",
+      "desc": "Draw Line — SVG রেখা নিজেকে এঁকে ফেলে, যেন কেউ কলম দিয়ে লিখছে।"
+    },
+    {
+      "cat": "motion",
+      "title": "প্যারালাক্স",
+      "href": "/museverse/motion/13-parallax.html",
+      "desc": "Parallax — মাউস নাড়ালে স্তরগুলো আলাদা গতিতে সরে — গভীরতার অনুভূতি।"
+    },
+    {
+      "cat": "motion",
+      "title": "পার্টিকলস",
+      "href": "/museverse/motion/14-particles.html",
+      "desc": "Particles — অসংখ্য ছোট কণা ধীরে ভেসে বেড়ায় — জোনাকি বা তারার মতো।"
+    },
+    {
+      "cat": "motion",
+      "title": "মার্কি",
+      "href": "/museverse/motion/15-marquee.html",
+      "desc": "Marquee — লেখা একদিকে বয়ে যায়, শেষ নেই — সিনেমার ক্রেডিট বা খবরের ফিতার মতো।"
+    },
+    {
+      "cat": "motion",
+      "title": "ওয়েভ",
+      "href": "/museverse/motion/16-wave.html",
+      "desc": "Wave — SVG ঢেউ একটানা বয়ে যায় — নদী, সমুদ্র, বা শান্ত ছন্দ।"
+    },
+    {
+      "cat": "motion",
+      "title": "স্ট্যাগার",
+      "href": "/museverse/motion/17-stagger.html",
+      "desc": "Stagger — একটা তালিকার আইটেমগুলো একটার পর একটা আসে — ছন্দ তৈরি হয়।"
+    },
+    {
+      "cat": "motion",
+      "title": "মর্ফ",
+      "href": "/museverse/motion/18-morph.html",
+      "desc": "Morph — একটা আকৃতি ধীরে অন্য আকৃতিতে বদলায় — তরল, জীবন্ত, অপ্রত্যাশিত।"
+    },
+    {
+      "cat": "motion",
+      "title": "কনফেটি",
+      "href": "/museverse/motion/19-confetti.html",
+      "desc": "Confetti — রঙিন কাগজের টুকরো উপরে ফুটে গিয়ে পড়ে — উদযাপনের সহজ ভাষা।"
+    },
+    {
+      "cat": "motion",
+      "title": "কার্সর ট্রেইল",
+      "href": "/museverse/motion/20-cursor-trail.html",
+      "desc": "Cursor Trail — মাউস যেদিকে যায়, পেছনে ছোট ছোট বিন্দু জ্বলে ওঠে — খেলার মতো।"
+    }
+  ]
+}

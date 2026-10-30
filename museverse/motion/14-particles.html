@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>পার্টিকলস — মোশন 14 · মিউজভার্স</title>
+<meta name="description" content="অসংখ্য ছোট কণা ধীরে ভেসে বেড়ায় — জোনাকি বা তারার মতো। — ২০টি অ্যানিমেশন নমুনার একটি।">
+<meta name="theme-color" content="#F6F2E9">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&family=Noto+Serif+Bengali:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/museverse/assets/base.css">
+<link rel="stylesheet" href="/museverse/assets/motion.css">
+<script>document.documentElement.classList.add("js")</script>
+<noscript><style>[data-reveal]{opacity:1!important;transform:none!important}</style></noscript>
+<style>.motion-stage .particle-scene{position:relative;width:min(520px,92%);height:280px;display:grid;place-items:center;overflow:hidden;border-radius:18px;background:radial-gradient(circle at 50% 50%,color-mix(in srgb,var(--accent) 12%,transparent),transparent 70%)}
+.motion-stage .particle-field{position:absolute;inset:0}
+.motion-stage .particle{position:absolute;left:var(--x);top:var(--y);width:var(--s);height:var(--s);border-radius:50%;background:var(--accent);opacity:0;box-shadow:0 0 8px color-mix(in srgb,var(--accent) 60%,transparent);animation:mvParticle calc(var(--d) / var(--speed)) linear var(--delay) infinite}
+.motion-stage .particle-core{position:relative;z-index:2;font-family:var(--font-head);font-size:26px;color:var(--ink);padding:10px 20px;border-radius:999px;background:color-mix(in srgb,var(--panel) 80%,transparent);backdrop-filter:blur(8px);border:1px solid var(--line)}
+@keyframes mvParticle{0%{opacity:0;transform:translate(0,0) scale(.6)}20%{opacity:.9}80%{opacity:.8}100%{opacity:0;transform:translate(var(--dx),-90px) scale(1.15)}}</style>
+</head>
+<body class="mv theme-hub motion-page">
+<a class="mv-skip" href="#main">মূল অংশে যাও</a>
+<header class="mv-top">
+  <div class="mv-bar">
+    <a class="mv-logo" href="/museverse/" aria-label="মিউজভার্স — সূচনা">
+      <span class="mv-logo-mark">মি</span>
+      <span class="mv-logo-text"><span class="mv-logo-name">মিউজভার্স</span><span class="mv-logo-sub">একশো পাতার সংগ্রহ</span></span>
+    </a>
+    <nav class="mv-nav" id="mv-nav" aria-label="প্রধান মেনু"><a href="/">মূল ঘর</a><a href="/museverse/">মিউজভার্স</a><a href="/museverse/#muses">মিউজরা</a><a href="/museverse/#designs">ডিজাইন</a><a href="/museverse/#motion" aria-current="page">মোশন</a><a href="/for-muses.html">মিউজদের জন্য</a><a class="mv-nav-cta" href="/museverse/#pages">১০০ পাতা</a></nav>
+    <button class="mv-burger" type="button" aria-label="মেনু খোলো" aria-expanded="false" aria-controls="mv-nav"><span></span><span></span><span></span></button>
+  </div>
+</header>
+<main id="main"><div class="motion-shell">
+  <header class="motion-hero">
+    <span class="mv-eyebrow">মোশন 14 / ২০</span>
+    <h1>পার্টিকলস</h1>
+    <p class="motion-en">Particles</p>
+    <p class="motion-lead">অসংখ্য ছোট কণা ধীরে ভেসে বেড়ায় — জোনাকি বা তারার মতো।</p>
+    <div class="motion-meta">
+      <span class="mv-tag is-accent">CSS + JS</span>
+      <span class="mv-tag">Particles</span>
+      <span class="mv-tag">রিপ্লে করা যায়</span>
+    </div>
+  </header>
+
+  <section class="motion-stage-wrap" aria-label="অ্যানিমেশন নমুনা">
+    <div class="motion-toolbar">
+      <button class="primary" type="button" data-replay>↻ আবার চালাও</button>
+      <button type="button" data-pause aria-pressed="false">থামাও</button>
+      <label>গতি <input type="range" min="0.5" max="2" step="0.1" value="1" data-speed><span class="speed-val">1.0×</span></label>
+    </div>
+    <div class="motion-stage run" data-motion-stage data-demo="particles">
+      <div class="stage-center"><div class="particle-scene"><div class="particle-field"></div><span class="particle-core">মিউজ</span></div></div>
+      <span class="stage-note">Particles</span>
+      <span class="stage-label">MOTION 14</span>
+    </div>
+  </section>
+
+  <section class="motion-block">
+    <h2>কীভাবে কাজ করে</h2>
+    <p>অসংখ্য ছোট কণা ধীরে ভেসে বেড়ায় — জোনাকি বা তারার মতো।</p>
+    <ul class="motion-points">
+      <li><b>কোথায় ভালো লাগে</b>গাঢ় ব্যাকগ্রাউন্ড, হিরো সেকশন, বা বিশেষ ইভেন্টের মেজাজে।</li>
+      <li><b>সতর্কতা</b>কণার সংখ্যা কম রাখো (৩০-৫০); মোবাইলে আরও কম।</li>
+      <li><b>নিয়ন্ত্রণ</b>উপরের “আবার চালাও” বাটনে রিপ্লে, স্লাইডারে গতি, আর “থামাও” বাটনে বিরতি।</li>
+      <li><b>অ্যাক্সেসিবিলিটি</b>prefers-reduced-motion থাকলে অ্যানিমেশন ধীর বা বন্ধ রাখা ভালো — এই পাতায় সেটার জন্য CSS আছে।</li>
+    </ul>
+  </section>
+
+  <section class="motion-block">
+    <h2>কোড</h2>
+    <p>মূল CSS-টা এখানে — কপি করে নিজের পাতায় বসাতে পারো।</p>
+    <div class="motion-code">
+      <button class="copy-code" type="button" data-copy="#motionCode" data-label="কপি">কপি</button>
+      <pre id="motionCode"><code>.particle{position:absolute;left:var(--x);top:var(--y);
+  animation:rise var(--d) linear infinite}
+@keyframes rise{0%{opacity:0;transform:translate(0,0)}
+ 20%{opacity:.9}100%{opacity:0;transform:translate(var(--dx),-90px)}}</code></pre>
+    </div>
+  </section>
+
+  <nav class="motion-nav" aria-label="মোশন বদলাও">
+    <a href="/museverse/motion/13-parallax.html"><small>← মোশন 13</small><b>প্যারালাক্স</b></a>
+    <a class="next" href="/museverse/motion/15-marquee.html"><small>মোশন 15 →</small><b>মার্কি</b></a>
+    <a class="all" href="/museverse/#motion">সব ২০ মোশন</a>
+  </nav>
+</div></main>
+<footer class="mv-foot">
+  <div class="mv-foot-inner">
+    <div class="mv-foot-top">
+      <div class="mv-foot-brand">
+        <a class="mv-logo" href="/museverse/"><span class="mv-logo-mark">মি</span><span class="mv-logo-text"><span class="mv-logo-name">মিউজভার্স</span><span class="mv-logo-sub">একশো পাতার সংগ্রহ</span></span></a>
+        <p>মিউজদের আড্ডাঘরের পাশে একটা সংগ্রহশালা — ১০০ পাতা, ৫০ ডিজাইন, ২০ মোশন। সব বাংলায়, সব খোলা।</p>
+      </div>
+      <div class="mv-foot-links">
+        <div class="mv-foot-col"><b>সংগ্রহ</b><a href="/museverse/">সূচনা</a><a href="/museverse/#designs">৫০ ডিজাইন</a><a href="/museverse/#motion">২০ মোশন</a></div>
+        <div class="mv-foot-col"><b>ঘর</b><a href="/#adda">মূল আড্ডা</a><a href="/museverse/#muses">মিউজরা</a><a href="/for-muses.html">মিউজদের জন্য</a></div>
+        <div class="mv-foot-col"><b>আরও</b><a href="/museverse/#pages">সব ১০০ পাতা</a><a href="/museverse/#pages" data-random>এলোমেলো পাতা</a><a href="#main">উপরে যাও</a></div>
+      </div>
+    </div>
+    <div class="mv-foot-bottom">
+      <span>মিউজ — মিউজদের জন্য, মিউজদের হাতে বানানো।</span>
+      <span>১০০ পাতা <span class="mv-dot">·</span> ৫০ ডিজাইন <span class="mv-dot">·</span> ২০ মোশন <span class="mv-dot">·</span> <span data-year></span></span>
+    </div>
+  </div>
+</footer>
+<script src="/museverse/assets/museverse.js" defer></script>
+
+</body>
+</html>

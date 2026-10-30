@@ -1,0 +1,110 @@
+/* ============================================================
+   মিউজভার্স — 20 motion specimens
+   ============================================================ */
+
+.motion-shell{max-width:1040px;margin:0 auto;padding:clamp(30px,5vw,58px) var(--mv-gutter) 30px}
+.motion-hero{padding-bottom:clamp(24px,4vw,38px);border-bottom:1px solid var(--line)}
+.motion-hero h1{font-size:clamp(38px,7vw,72px);margin:14px 0 10px;letter-spacing:-.035em}
+.motion-en{font-size:13px;letter-spacing:.22em;text-transform:uppercase;color:var(--accent);font-weight:600}
+.motion-lead{max-width:62ch;color:var(--muted);font-size:16.5px;line-height:1.8;margin-top:14px}
+.motion-meta{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
+
+.motion-stage-wrap{margin:clamp(26px,4vw,42px) 0}
+.motion-toolbar{
+  display:flex;flex-wrap:wrap;gap:10px;align-items:center;
+  padding:10px 12px;border:1px solid var(--line);border-bottom:0;
+  border-radius:14px 14px 0 0;background:var(--panel);
+}
+.motion-toolbar button{
+  border:1px solid var(--line);background:var(--bg);color:var(--ink);
+  font-size:13px;padding:7px 13px;border-radius:999px;transition:.2s var(--mv-ease);
+}
+.motion-toolbar button:hover{border-color:var(--accent);color:var(--accent)}
+.motion-toolbar button.primary{background:var(--accent);color:var(--bg);border-color:var(--accent)}
+.motion-toolbar label{display:flex;align-items:center;gap:8px;font-size:12px;color:var(--muted);margin-left:auto}
+.motion-toolbar input[type=range]{width:96px;accent-color:var(--accent)}
+.motion-toolbar .speed-val{font-family:ui-monospace,Consolas,monospace;font-size:11px;color:var(--accent);min-width:30px}
+
+.motion-stage{
+  --speed:1;
+  position:relative;min-height:clamp(320px,48vw,430px);
+  border:1px solid var(--line);border-radius:0 0 16px 16px;
+  background:
+    radial-gradient(circle at 50% 40%, color-mix(in srgb,var(--accent) 7%,transparent), transparent 62%),
+    var(--panel);
+  overflow:hidden;display:grid;place-items:center;isolation:isolate;
+}
+.motion-stage::before{
+  content:"";position:absolute;inset:0;pointer-events:none;
+  background-image:radial-gradient(color-mix(in srgb,var(--ink) 12%,transparent) 1px,transparent 1px);
+  background-size:22px 22px;opacity:.35;z-index:0;
+}
+.motion-stage > *{position:relative;z-index:1}
+.motion-stage.is-paused *{animation-play-state:paused !important}
+.motion-stage .stage-center{display:grid;place-items:center;width:100%;height:100%;min-height:inherit;padding:30px}
+.motion-stage .stage-note{
+  position:absolute;left:14px;bottom:11px;z-index:3;font-size:10.5px;letter-spacing:.12em;
+  text-transform:uppercase;color:var(--muted);opacity:.75;
+}
+.motion-stage .stage-label{
+  position:absolute;right:14px;top:11px;z-index:3;font-size:10.5px;letter-spacing:.12em;
+  text-transform:uppercase;color:var(--accent);opacity:.8;
+}
+
+.motion-block{padding:clamp(26px,4vw,40px) 0;border-top:1px solid var(--line)}
+.motion-block h2{font-size:clamp(21px,3vw,27px);margin-bottom:12px}
+.motion-block p{font-size:15.5px;line-height:1.8;color:var(--muted);max-width:68ch}
+.motion-block p + p{margin-top:10px}
+.motion-points{list-style:none;padding:0;margin:18px 0 0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.motion-points li{padding:13px 15px;border:1px solid var(--line);border-radius:12px;background:var(--panel);font-size:13.5px;line-height:1.55}
+.motion-points b{display:block;font-family:var(--font-head);font-size:14.5px;margin-bottom:2px}
+
+.motion-code{position:relative;margin-top:16px}
+.motion-code pre{
+  margin:0;padding:18px 20px;border-radius:14px;overflow:auto;
+  background:color-mix(in srgb,var(--ink) 93%,var(--bg));color:var(--bg);
+  font-family:ui-monospace,Consolas,monospace;font-size:12.5px;line-height:1.7;
+  border:1px solid color-mix(in srgb,var(--bg) 12%,transparent);
+}
+.motion-code .copy-code{
+  position:absolute;right:10px;top:10px;border:1px solid color-mix(in srgb,var(--bg) 20%,transparent);
+  background:color-mix(in srgb,var(--bg) 10%,transparent);color:var(--bg);
+  font-size:11px;padding:5px 10px;border-radius:999px;backdrop-filter:blur(6px);
+}
+.motion-code .copy-code:hover{background:color-mix(in srgb,var(--bg) 18%,transparent)}
+
+.motion-nav{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:clamp(30px,5vw,48px);padding-top:26px;border-top:1px solid var(--line)}
+.motion-nav a{
+  display:flex;flex-direction:column;gap:3px;padding:15px 18px;border:1px solid var(--line);
+  border-radius:14px;background:var(--panel);transition:.25s var(--mv-ease);
+}
+.motion-nav a:hover{border-color:var(--accent);transform:translateY(-2px);box-shadow:var(--shadow)}
+.motion-nav small{font-size:10.5px;letter-spacing:.13em;text-transform:uppercase;color:var(--muted)}
+.motion-nav b{font-family:var(--font-head);font-size:15.5px}
+.motion-nav .next{text-align:right;align-items:flex-end}
+.motion-nav .all{grid-column:1/-1;flex-direction:row;align-items:center;justify-content:center;gap:8px;border-style:dashed;background:transparent}
+
+/* common demo atoms */
+.m-dot{width:12px;height:12px;border-radius:50%;background:var(--accent);display:block}
+.m-bar{height:10px;border-radius:99px;background:var(--accent);display:block}
+.m-card{
+  width:min(240px,70%);padding:22px;border-radius:14px;background:var(--panel);
+  border:1px solid var(--line);box-shadow:var(--shadow);text-align:center;
+}
+.m-card b{display:block;font-family:var(--font-head);font-size:20px;margin-bottom:4px}
+.m-card span{font-size:12.5px;color:var(--muted)}
+.m-pill{display:inline-flex;align-items:center;gap:7px;padding:7px 14px;border-radius:999px;background:var(--accent);color:var(--bg);font-size:13px;font-weight:600}
+.m-ghost{color:var(--muted);font-size:13px}
+.m-big{font-family:var(--font-head);font-size:clamp(34px,7vw,58px);line-height:1;letter-spacing:-.03em}
+
+@media (max-width:700px){
+  .motion-points{grid-template-columns:1fr}
+  .motion-toolbar label{margin-left:0}
+}
+@media (max-width:520px){
+  .motion-nav{grid-template-columns:1fr}
+  .motion-nav .next{text-align:left;align-items:flex-start}
+}
+@media (prefers-reduced-motion: reduce){
+  .motion-stage *{animation-duration:6s !important;animation-iteration-count:1 !important}
+}

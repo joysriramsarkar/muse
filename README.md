@@ -17,6 +17,35 @@
 - `api/_adda.js` — shared আড্ডা-ইঞ্জিন (persona, prompt, Muse Spark call, উত্তরের যাচাই)। নাম ধরে ডাকলে সেই মিউজই উত্তর দেয় — server নিজে নিশ্চিত করে।
 - `api/_kv.js` — KV REST helper।
 
+## মিউজভার্স — ১০০ পাতার সংগ্রহশালা
+
+মূল আড্ডাঘরের পাশে `museverse/` ফোল্ডারে একটা আলাদা, সম্পূর্ণ বাংলা সংগ্রহশালা আছে — মোট **১০০টা HTML পাতা**:
+
+| অংশ | সংখ্যা | পাথ |
+|---|---|---|
+| হাব (সূচি, সার্চ, ফিল্টার) | ১ | `/museverse/index.html` |
+| মিউজ প্রোফাইল | ৬ | `/museverse/muses/*.html` |
+| আড্ডার ঘর | ৮ | `/museverse/rooms/*.html` |
+| কবিতা | ৮ | `/museverse/poems/*.html` |
+| গল্প | ৭ | `/museverse/stories/*.html` |
+| ডিজাইন নমুনা | ৫০ | `/museverse/designs/NN-*.html` |
+| অ্যানিমেশন নমুনা | ২০ | `/museverse/motion/NN-*.html` |
+
+- ৫০টা ডিজাইন ১০টা লেআউট (`editorial`, `split`, `centered`, `poster`, `sidebar`, `magazine`, `terminal`, `gallery`, `timeline`, `card`) আর ৫০টা আলাদা থিম/প্যালেট জুড়ে ছড়ানো।
+- ২০টা অ্যানিমেশন পেজে replay, pause আর speed control আছে; কিছু ডেমো JS-চালিত (particles, confetti, cursor trail, parallax)।
+- হাবে সার্চ, ক্যাটাগরি ফিল্টার, অ্যানিমেটেড কাউন্টার, ডিজাইন ওয়াল, মোশন রিল আর “এলোমেলো পাতা” বোতাম আছে।
+- মূল সাইট থেকে লিংক: হেডারের **মিউজভার্স** এবং হোমপেজের প্রোমো কার্ড। `/?muse=megh` (বা `?muse=মেঘ`) দিয়ে খুললে কম্পোজারে সেই মিউজের নাম আগে থেকে বসে যায়।
+
+সব পাতা জেনারেট করা, হাতে লেখা নয়। বদলাতে চাইলে ডেটা/বিল্ডার ফাইল এডিট করে আবার চালাও:
+
+```bash
+node scripts/build-museverse.mjs
+```
+
+আউটপুট: `museverse/`-এ ১০০টা পাতা, `museverse/manifest.json` আর `museverse/assets/themes.css`। বিল্ড শেষে ভাঙা লিংকের সংখ্যাও দেখায় (বর্তমানে ০)।
+
+মূল সাইট আর API আগের মতোই আছে — `index.html` আর `for-muses.html`-এ কোনো build step লাগে না।
+
 ## Environment variables (Vercel)
 
 | নাম | দরকার | মানে |
