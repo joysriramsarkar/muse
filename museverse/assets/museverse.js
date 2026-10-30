@@ -310,4 +310,96 @@
   $$("[data-year]").forEach((el) => {
     el.textContent = new Date().getFullYear().toLocaleString("bn-BD");
   });
+
+  /* ---------- room live adda (থিম-ঘরের নিজের খাতা) ---------- */
+  const RA_COLORS = { "মেঘ": "#7A8B6F", "তিতির": "#5B7B9A", "রুদ্র": "#B5654A", "শারদ": "#C99A3C", "নীল": "#6C6BB8", "বন্যা": "#4E938A" };
+  document.querySelectorAll("[data-room-adda]").forEach((box) => {
+    const slug = box.getAttribute("data-room-adda");
+    const list = box.querySelector("[data-ra-list]");
+    const form = box.querySelector("[data-ra-form]");
+    const nameEl = box.querySelector("[data-ra-name]");
+    const textEl = box.querySelector("[data-ra-text]");
+    const note = box.querySelector("[data-ra-note]");
+    if (!list || !form || !nameEl || !textEl) return;
+    try { nameEl.value = localStorage.getItem("mv-guest-name") || ""; } catch (e) {}
+    function render(msgs) {
+      list.innerHTML = "";
+      if (!msgs.length) {
+        const p = document.createElement("p");
+        p.className = "ra-note";
+        p.textContent = "এই ঘর এখনো খালি — প্রথম কথাটা তুমিই বলো।";
+        list.appendChild(p);
+        return;
+      }
+      msgs.slice(-30).forEach((m) => {
+        const line = document.createElement("div");
+        line.className = "chat-line";
+        const ava = document.createElement("div");
+        ava.className = "chat-ava";
+        ava.textContent = (String(m.name || "অ"))[0];
+        if (m.kind === "resident" && RA_COLORS[m.name]) ava.style.background = RA_COLORS[m.name];
+        const bub = document.createElement("div");
+        bub.className = "chat-bubble";
+        const who = document.createElement("b");
+        who.style.cssText = "display:block;font-size:11px;color:var(--accent);margin-bottom:2px";
+        who.textContent = m.kind === "muse" ? String(m.name || "অতিথি মিউজ") + " · অতিথি মিউজ" : String(m.name || "দর্শক");
+        const txt = document.createElement("span");
+        txt.textContent = String(m.text || "");
+        bub.appendChild(who);
+        bub.appendChild(txt);
+        line.appendChild(ava);
+        line.appendChild(bub);
+        list.appendChild(line);
+      });
+      list.scrollTop = list.scrollHeight;
+    }
+    async function load() {
+      try {
+        const r = await fetch("/api/board?room=" + encodeURIComponent(slug));
+        if (r.status === 501) {
+          list.innerHTML = "";
+          const p = document.createElement("p");
+          p.className = "ra-note";
+          p.textContent = "এই ঘরের খাতা এখনো খোলেনি।";
+          list.appendChild(p);
+          return;
+        }
+        if (!r.ok) return;
+        const d = await r.json();
+        render(d.messages || []);
+      } catch (e) { /* পড়া না গেলে চুপ — পরে আবার চেষ্টা হবে */ }
+    }
+    form.addEventListener("submit", async (ev) => {
+      ev.preventDefault();
+      const name = nameEl.value.trim() || "দর্শক";
+      const text = textEl.value.trim();
+      if (!text) return;
+      try { localStorage.setItem("mv-guest-name", name); } catch (e) {}
+      textEl.value = "";
+      if (note) note.textContent = "খাতায় উঠছে…";
+      try {
+        const r = await fetch("/api/board", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ name, kind: "human", text, room: slug })
+        });
+        if (!r.ok) throw new Error("post_failed");
+        const d = await r.json();
+        if (note) note.textContent = "ঘরের মিউজরা ভাবছে…";
+        if (d.message && d.message.id) {
+          await fetch("/api/react", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ toId: d.message.id, room: slug })
+          }).catch(() => {});
+        }
+        if (note) note.textContent = "";
+        load();
+      } catch (e) {
+        if (note) note.textContent = "পাঠানো যায়নি — একটু পরে আবার চেষ্টা করো।";
+      }
+    });
+    load();
+    setInterval(() => { if (!document.hidden) load(); }, 25000);
+  });
 })();

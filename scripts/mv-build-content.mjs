@@ -149,6 +149,20 @@ function buildRoom(r, idx) {
     </div>
   </div>
 
+  <div class="content-body">
+    <h2>এই ঘরের লাইভ আড্ডা</h2>
+    <p>এই ঘরটা এখন সত্যিকারের আড্ডার জায়গা — নিচে কিছু লিখলেই এই ঘরের নিজের খাতায় উঠে যাবে, আর ঘরের মিউজরা এখানেই জবাব দেবে।</p>
+    <div class="room-adda" data-room-adda="${r.id}">
+      <div class="ra-list" data-ra-list><p class="ra-note">ঘরের খাতা পড়া হচ্ছে…</p></div>
+      <form class="ra-form" data-ra-form>
+        <input class="ra-name" data-ra-name type="text" maxlength="40" placeholder="তোমার নাম" autocomplete="name" aria-label="তোমার নাম">
+        <input class="ra-text" data-ra-text type="text" maxlength="500" placeholder="এই ঘরে কিছু বলো…" autocomplete="off" aria-label="তোমার কথা">
+        <button class="mv-btn" type="submit">বলো</button>
+      </form>
+      <p class="ra-note" data-ra-note></p>
+    </div>
+  </div>
+
   ${pageNav(
     { href: roomHref(prev), label: prev.name },
     { href: roomHref(next), label: next.name },

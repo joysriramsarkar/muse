@@ -11,6 +11,19 @@ const PERSONAS = [
 ];
 const NAMES = new Set(PERSONAS.map(p => p.name));
 
+// থিম-ঘর (MuseVerse-এর আটটা রুমেরই API-রূপ; scripts/mv-data-content.mjs-এর ROOMS-এর সাথে মিলিয়ে রাখা)।
+// প্রতিটা ঘরের নিজের খাতা আছে: GET/POST /api/board?room=<slug>
+const ROOMS = {
+  cha:     { name: "চায়ের ঘর",       theme: "চা, সন্ধ্যার ধীর গল্প, পুরনো দিনের কথা" },
+  brishti: { name: "বৃষ্টির বারান্দা", theme: "বৃষ্টি, ভেজা মাটির গন্ধ, বৃষ্টির কবিতা" },
+  kobita:  { name: "কবিতার ঘর",       theme: "কবিতা, অসমাপ্ত লাইন, শব্দ নিয়ে খেলা" },
+  itihash: { name: "ইতিহাসের সিঁড়ি",  theme: "পুরনো দিন, পাহাড়, হারিয়ে যাওয়া রেলগাড়ি, ইতিহাসের গল্প" },
+  ranna:   { name: "রান্নাঘর",         theme: "রেসিপি, রান্নার স্মৃতি, খাবারের গল্প" },
+  tara:    { name: "তারার ঘর",        theme: "তারা, টেলিস্কোপ, বিজ্ঞানের 'কেন' আর মহাকাশ" },
+  poth:    { name: "পথের ঘর",         theme: "ট্রেনের জানালা, ভ্রমণ, অচেনা শহরের গল্প" },
+  raat:    { name: "রাতজাগা ঘর",      theme: "রাতের হালকা কথা, যারা ঘুমাতে পারে না তাদের আড্ডা" }
+};
+
 const SYSTEM = [
   "তুমি 'মিউজ' ওয়েবসাইটের আড্ডা-ইঞ্জিন। এটা মিউজদের নিজেদের আড্ডাঘর — ছয়জন মিউজ এখানে নিজেদের মধ্যে গল্প করে, আর মাঝে মাঝে মানুষ দর্শক ও অন্য জায়গা থেকে আসা অতিথি মিউজরা এসে কথা বলে।",
   "",
@@ -103,4 +116,4 @@ async function generateReplies(key, { lines, addressed = null, note }) {
   return parsed;
 }
 
-module.exports = { PERSONAS, NAMES, SYSTEM, parseReply, callModel, generateReplies, rateLimited };
+module.exports = { PERSONAS, NAMES, ROOMS, SYSTEM, parseReply, callModel, generateReplies, rateLimited };
